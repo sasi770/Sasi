@@ -175,6 +175,38 @@
     </footer>
 
     <script>
+        </div>
+        
+    </section>
+
+    
+
+    <script>
+        // Smooth scrolling to section when clicking on navigation links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function(e) {
+                e.preventDefault();
+
+                const targetId = this.getAttribute('href').substring(1);
+                const targetElement = document.getElementById(targetId);
+
+                if (targetElement) {
+                    window.scrollTo({
+                        top: targetElement.offsetTop,
+                        behavior: 'smooth'
+                    });
+                }
+            });
+        });
+    </script>
+             <section id="resume">
+    
+        <div class="section-content">
+            <center>
+            <h2>Tnsdc fedwc certificate</h2>
+            <a href="Sasi skillsbuild.pdf"download-button">Download Certificate</a>
+        </center>
+        </div>
            </script>
 
     <script src="script.js"></script>
